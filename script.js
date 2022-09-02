@@ -1,21 +1,2 @@
-function displayDate() {
-    document.getElementById("currentDay").innerHTML = Date();
-
-};
-displayDate();
-
-
-
-var form =  document.getElementById("form")
-
-    form.addEventListener("submit", function(event){
-    event.preventDefault()
-
-
-
-var schedule = document.getElementById("schedule").value
-
-    console.log(schedule)
-
-});
-
+// document.getElementById("currentDay").append("hi")
+$("#currentDay").append(dayjs().format('dddd, MMMM D, YYYY'))
